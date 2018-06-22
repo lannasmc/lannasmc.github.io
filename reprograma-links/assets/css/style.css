@@ -1,0 +1,164 @@
+* {
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+}
+
+/* Nav bar  */
+
+.navbar {
+  font-weight: 500;
+  position: fixed;
+  top: 0;
+  font-size: 18px;
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  background-color: #5b245c;
+}
+
+#navbar-toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-reprograma {
+  width: 140px;
+  margin: 5px;
+}
+
+#menu-toggle {
+  width: 28px;
+  flex-direction: row-reverse;
+}
+
+strong,
+#navbarDropdown,
+.nav-item> #navlink {
+  color: #F7F4F7;
+  opacity: 0.8;
+  font-family: 'Muli', sans-serif;
+}
+
+#navbarSupportedContent ul li a:hover {
+  color: #7e5a9b;
+}
+
+.collapse {
+  flex-direction: row-reverse;
+}
+
+#input-search {
+  border-radius: 20px;
+}
+
+/* Side bar */
+
+body {
+  overflow-x: hidden;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+  margin-top: 15px;
+}
+
+#page-content-wrapper {
+  position: absolute;
+  padding: 5px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color:#585555;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #7e5a9b;
+  background: rgba(177, 172, 172, 0.2);
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #585555;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+  color: #7e5a9b;
+  background: none;
+}
+
+/* link pages  */
+
+#link-list {
+  color: #696666;
+  margin-top: 35px;
+}
+
+@media(max-width:720px) {
+  #wrapper.toggled {
+    padding-left: 5px;
+  }
+  #sidebar-wrapper {
+    width: 0;
+    display: none;
+  }
+}
